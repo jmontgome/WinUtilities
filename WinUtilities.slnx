@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="VolumeHack/VolumeHack.vcxproj" />
+  <Project Path="VolumeHackCSharp/SetVolumeCSharp.csproj" />
+</Solution>
