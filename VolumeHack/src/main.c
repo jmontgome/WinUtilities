@@ -23,8 +23,12 @@ int main(int argc, char* argv[])
         char* end;
         float testFloat = strtof(argv[1], &end);
         
-        if (*end != '\0' && *end != '%') {
+        if (*end != '\0') {
             printf("Invalid number\n");
+            return 1;
+        }
+        if (*end != '%') {
+            printf("Please make number a percentage\n");
             return 1;
         }
 
@@ -35,9 +39,6 @@ int main(int argc, char* argv[])
         }
 
         volumeLevel = testFloat / 100;
-
-        if (volumeLevel < 0.0f) volumeLevel = 0.0f;
-        if (volumeLevel > 1.0f) volumeLevel = 1.0f;
     }
 
     IMMDeviceEnumerator* enumerator = NULL;
