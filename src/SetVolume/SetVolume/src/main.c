@@ -23,12 +23,8 @@ int main(int argc, char* argv[])
         char* end;
         float testFloat = strtof(argv[1], &end);
         
-        if (*end != '\0') {
-            printf("Invalid number\n");
-            return 1;
-        }
         if (*end != '%') {
-            printf("Please make number a percentage\n");
+            printf("Please make sure you enter a number with a percent symbol at the end.\n");
             return 1;
         }
 

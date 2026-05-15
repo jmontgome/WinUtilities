@@ -4,6 +4,9 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="VolumeHack/VolumeHack.vcxproj" />
-  <Project Path="VolumeHackCSharp/SetVolumeCSharp.csproj" />
+  <Folder Name="/src/" />
+  <Folder Name="/src/SetVolume/">
+    <Project Path="src/SetVolume/SetVolume/VolumeHack.vcxproj" Id="cf8c7020-5cd7-6658-8ccd-600bb1c60487" />
+    <Project Path="src/SetVolume/SetVolumeCSharp/SetVolumeCSharp.csproj" />
+  </Folder>
 </Solution>
